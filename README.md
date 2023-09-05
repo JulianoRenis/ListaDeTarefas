@@ -1,4 +1,4 @@
-# Big Game Survey 
+# Lista de tarefas - Módulo banco de Dados Relacional
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/JulianoRenis/ListaDeTarefas/blob/master/LICENSE) 
 
 # Sobre o projeto
