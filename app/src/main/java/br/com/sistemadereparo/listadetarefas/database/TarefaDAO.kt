@@ -8,6 +8,8 @@ import br.com.sistemadereparo.listadetarefas.model.Tarefa
 
 class TarefaDAO(context: Context) : ITarefaDAO {
 
+
+
     private val escrita = DatabaseHelper(context).writableDatabase
     private val leitura = DatabaseHelper(context).readableDatabase
 
@@ -69,7 +71,7 @@ class TarefaDAO(context: Context) : ITarefaDAO {
         }
 
 
-    override fun listar(): List<Tarefa> {
+    override fun listar(): MutableList<Tarefa> {
 
         val listaTarefas = mutableListOf<Tarefa>()
         val sql = "SELECT ${DatabaseHelper.ID_TAREFA}, ${DatabaseHelper.COLUNA_DESCRICAO}," +

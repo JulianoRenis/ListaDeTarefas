@@ -9,10 +9,12 @@
     <TextView
         android:id="@+id/textDescricao"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:text="Ir ao mercado"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textData"
+        app:layout_constraintEnd_toStartOf="@+id/btnEditar"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
@@ -29,6 +31,8 @@
 
     <ImageButton
         android:id="@+id/btnExcluir"
+        tools:visibility="visible"
+        android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="excluir"
@@ -40,6 +44,8 @@
 
     <ImageButton
         android:id="@+id/btnEditar"
+        tools:visibility="visible"
+        android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="editar"
